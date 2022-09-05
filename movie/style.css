@@ -1,8 +1,20 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
 body{
-    background-image: url(pkg.jpg);
+    background-color: black;
     margin: 0;
     font-family: 'Roboto', sans-serif;
     color: white;
+}
+
+.search{
+    text-align: left;
+    
 }
 
 .card{
@@ -32,27 +44,34 @@ body{
       }
 }
 
-.card-title{
+.movie-title{
     text-transform: uppercase;
     font-size: 32px;
     font-weight: normal;
     margin-bottom: 0;
 }
 
-.card-image{
+.movie-image{
     height: 200px;
     
 
 }
 
-.card-subtitle{
+.movie-genre{
     font-weight: bolder;
-    color: rgba(119, 0, 255, 0.568);
+    color: rgba(0, 132, 255, 0.568);
     margin-top: 5px;
 
 }
 
-#pokedex{
+.movie-about{
+    font-weight: bold;
+    color: rgba(0, 132, 255, 0.568);
+    margin-top: 5px;
+
+}
+
+#movies{
     padding-inline-start: 0;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -67,6 +86,6 @@ body{
 
 h1{
     text-transform: uppercase;
-    text-align: center;
-    font-size: 54px;
+    text-align: left;
+    font-size: 28px;
 }
